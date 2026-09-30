@@ -1,0 +1,45 @@
+Ouvinte
+=======
+
+Transcreve o que é falado em arquivos de áudio e vídeo, no seu computador.
+Nada do arquivo é enviado para um servidor. Só a primeira execução baixa o
+modelo de voz (cerca de 3 GB no modo mais preciso) para a pasta
+%LOCALAPPDATA%\Ouvinte.
+
+Como usar
+---------
+
+1. Dê dois cliques em executar.bat
+   ou, se o programa já foi gerado, abra dist\Ouvinte\Ouvinte.exe
+2. Arraste áudios ou vídeos para a janela, ou clique em Escolher arquivos.
+3. Deixe o idioma em Português se a fala for em português.
+4. Clique em Transcrever.
+5. Copie o texto, salve em TXT ou salve a legenda em SRT.
+
+Formatos aceitos: MP3, WAV, M4A, AAC, OGG, FLAC, OPUS, WMA,
+MP4, MKV, MOV, AVI, WEBM, WMV e outros de áudio/vídeo comuns.
+
+Precisão
+--------
+
+O modelo padrão é o Whisper large-v3, o mais preciso que roda localmente.
+Ele erra menos com áudio limpo, falado e sem música alta por cima.
+Nenhum transcritor acerta todas as palavras em todo áudio. Se o som estiver
+abafado, com várias pessoas ao mesmo tempo ou com muito ruído, revise o texto.
+
+Em "Palavras importantes", escreva nomes e siglas que aparecem na fala.
+Isso ajuda o modelo a não trocar esses termos.
+
+Gerar o .exe
+------------
+
+No Windows, dê dois cliques em build_exe.bat.
+O programa fica em dist\Ouvinte\Ouvinte.exe.
+Para compartilhar, compacte a pasta inteira dist\Ouvinte (não só o .exe).
+
+Requisito: Python 3.11 ou 3.12 instalado e marcado no instalador
+como "Add python.exe to PATH". O atalho py precisa funcionar no Prompt.
+
+GPU NVIDIA acelera bastante. Sem placa de vídeo, a transcrição usa o
+processador e arquivos longos demoram mais. A qualidade do texto continua
+a do modelo escolhido.

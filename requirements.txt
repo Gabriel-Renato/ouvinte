@@ -1,0 +1,4 @@
+faster-whisper==1.2.1
+customtkinter==6.0.0
+windnd==1.0.7
+imageio-ffmpeg==0.6.0

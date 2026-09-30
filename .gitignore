@@ -1,0 +1,8 @@
+.venv/
+.dados/
+__pycache__/
+build/
+dist/
+*.spec
+*.log
+.pytest_cache/
