@@ -35,10 +35,14 @@ Gerar o .exe
 
 No Windows, dê dois cliques em build_exe.bat.
 O programa fica em dist\Ouvinte\Ouvinte.exe.
-Para compartilhar, compacte a pasta inteira dist\Ouvinte (não só o .exe).
+Para outro computador, envie o arquivo dist\Ouvinte-Windows.zip.
+Esse ZIP já traz a pasta _internal e as bibliotecas do Visual C++
+(vcruntime140.dll e msvcp140.dll). Sem elas o Windows mostra
+"Failed to load Python DLL". Não envie só o .exe.
 
-Requisito: Python 3.11 ou 3.12 instalado e marcado no instalador
-como "Add python.exe to PATH". O atalho py precisa funcionar no Prompt.
+Requisito para gerar: Python 3.11 ou mais novo, instalado em python.org
+e marcado como "Add python.exe to PATH". O atalho py precisa funcionar
+no Prompt. Quem só recebe o ZIP não precisa instalar Python.
 
 GPU NVIDIA acelera bastante. Sem placa de vídeo, a transcrição usa o
 processador e arquivos longos demoram mais. A qualidade do texto continua

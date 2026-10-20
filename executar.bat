@@ -10,7 +10,7 @@ exit /b 0
 :fail
 echo.
 echo Nao foi possivel abrir o Ouvinte.
-echo Instale o Python 3.12 em python.org e marque "Add python.exe to PATH".
+echo Instale o Python 3.11 ou mais novo em python.org e marque "Add python.exe to PATH".
 echo.
 pause
 exit /b 1
